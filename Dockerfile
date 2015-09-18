@@ -14,12 +14,13 @@ RUN export DEBIAN_FRONTEND=noninteractive \
     && julia --eval 'Pkg.add("Interact")' \
     && julia --eval 'Pkg.add("Gadfly")' \
     && julia --eval 'Pkg.add("RDatasets")' \
-    && jupyter notebook --generate-config \
     && apt-get purge -y --auto-remove \
 		-o APT::AutoRemove::RecommendsImportant=false \
 		-o APT::AutoRemove::SuggestsImportant=false \
 		curl git \
 	&& rm -rf /var/lib/apt/lists/*
+
+COPY rootfs /
 
 VOLUME /notebooks
 EXPOSE 8888
