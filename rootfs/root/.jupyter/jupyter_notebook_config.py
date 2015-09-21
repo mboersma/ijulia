@@ -115,6 +115,7 @@ c.NotebookApp.server_extensions.append('ipyparallel.nbextension')
 # module, unless it is overridden using the --browser (NotebookApp.browser)
 # configuration option.
 # c.NotebookApp.open_browser = True
+c.NotebookApp.open_browser = False
 
 # The login handler class to use.
 # c.NotebookApp.login_handler_class = <class 'notebook.auth.login.LoginHandler'>
@@ -517,3 +518,4 @@ c.MultiKernelManager.default_kernel_name = 'julia-0.3'
 #
 # By default, all installed kernels are allowed.
 # c.KernelSpecManager.whitelist = traitlets.Undefined
+c.KernelSpecManager.whitelist = ["julia-0.3"]
