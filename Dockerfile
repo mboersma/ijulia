@@ -9,8 +9,6 @@ RUN export DEBIAN_FRONTEND=noninteractive \
     && curl -sSL https://bootstrap.pypa.io/get-pip.py | python3 \
     && pip3 install --disable-pip-version-check ipyparallel>=4.0.2 jupyter>=1.0.0 \
     && julia -e '[Pkg.add(p) for p in ["IJulia", "Interact", "Gadfly", "PyPlot", "RDatasets"]]' \
-    && julia -e 'using Gadfly' \
-    && julia -e 'using PyPlot' \
     && apt-get purge -y --auto-remove \
         -o APT::AutoRemove::RecommendsImportant=false \
         -o APT::AutoRemove::SuggestsImportant=false \

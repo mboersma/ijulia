@@ -27,6 +27,10 @@ julia:
 # open a new interactive julia command-line REPL session
 	docker run -rm -it -p :8888 -v $(VOLUME):/notebooks $(IMAGE):$(TAG) julia
 
+pull:
+# pull the mboersma/ijulia:latest docker image from Docker Hub
+	docker pull $(IMAGE):$(TAG)
+
 build:
 # build the mboersma/ijulia:latest docker image
 	docker build -t $(IMAGE):$(TAG) .
