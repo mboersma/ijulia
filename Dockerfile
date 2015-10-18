@@ -1,4 +1,4 @@
-FROM ubuntu-debootstrap:15.10
+FROM ubuntu-debootstrap:15.04
 
 RUN export DEBIAN_FRONTEND=noninteractive \
     && apt-get update && apt-get upgrade -y \
