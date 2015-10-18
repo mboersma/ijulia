@@ -33,9 +33,9 @@ build:
 
 clean:
 # remove the ijulia docker container and mboersma/ijulia:latest docker image
-	docker rm $(NAME)
-	docker rmi $(IMAGE):$(TAG)
+	-docker rm $(NAME)
+	-docker rmi $(IMAGE):$(TAG)
 
 full-clean:
 # force removal of all mboersma/ijulia docker images
-	docker images -q $(IMAGE) | xargs docker rmi -f
+	-docker images -q $(IMAGE) | xargs docker rmi -f

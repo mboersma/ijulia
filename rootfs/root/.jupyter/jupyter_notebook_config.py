@@ -390,7 +390,7 @@ c.NotebookApp.open_browser = False
 
 # The name of the default kernel to start
 # c.MultiKernelManager.default_kernel_name = 'python3'
-c.MultiKernelManager.default_kernel_name = 'julia-0.3'
+c.MultiKernelManager.default_kernel_name = 'julia-0.4'
 
 # The kernel manager class.  This is configurable to allow subclassing of the
 # KernelManager for customized behavior.
@@ -518,4 +518,4 @@ c.MultiKernelManager.default_kernel_name = 'julia-0.3'
 #
 # By default, all installed kernels are allowed.
 # c.KernelSpecManager.whitelist = traitlets.Undefined
-c.KernelSpecManager.whitelist = ["julia-0.3"]
+c.KernelSpecManager.whitelist = ["julia-0.4"]
