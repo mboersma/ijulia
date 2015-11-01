@@ -7,7 +7,7 @@ RUN export DEBIAN_FRONTEND=noninteractive \
     && add-apt-repository -y ppa:staticfloat/juliareleases && apt-get update \
     && apt-get install -y curl julia git libpython3-dev python3-jinja2 python3-matplotlib python3-tornado python3-zmq \
     && curl -sSL https://bootstrap.pypa.io/get-pip.py | python3 \
-    && pip3 install --disable-pip-version-check ipyparallel>=4.0.2 jupyter>=1.0.0 \
+    && pip3 install --disable-pip-version-check ipyparallel>=4.1.0 jupyter>=1.0.0 \
     && julia -e '[Pkg.add(p) for p in ["IJulia", "Interact", "Gadfly", "PyPlot", "RDatasets"]]' \
     && apt-get purge -y --auto-remove \
         -o APT::AutoRemove::RecommendsImportant=false \
