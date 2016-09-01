@@ -10,3 +10,7 @@ $ docker run -it -p 8888:8888 mboersma/ijulia
 ```
 
 Then open your browser to http://[docker ip]:8888/ and create a Julia notebook.
+
+### Support
+
+No. :-p
