@@ -14,3 +14,7 @@ Then open your browser to http://[docker ip]:8888/ and create a Julia notebook.
 ### Support
 
 No. :-p
+
+### Future
+
+Julia is interesting, but I am drawn back toward Python.
